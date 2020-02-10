@@ -23,10 +23,10 @@ def proof_of_work(last_proof):
     start = timer()
 
     print("Searching for next proof")
-    # proof = 0
+    proof = 0
     #  TODO: Your code here
-    # setting proof to last_proof times a random int between 0 and 100
-    proof = last_proof*randint(0, 100)
+    # setting proof to last_proof times a random int between 0 and 100 so to not start at 0 to make mining coins happen faster.
+    # proof = last_proof*randint(0, 100)
 
     new_last_proof = f'{last_proof}'.encode()
 

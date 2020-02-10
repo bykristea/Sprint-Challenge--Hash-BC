@@ -52,8 +52,8 @@ def valid_proof(last_hash, proof):
     guess = f'{proof}'.encode()
     guess_hash = hashlib.sha256(guess).hexdigest()
 
-    # last 6 of last hash equal the first 6 of the
-    return last_hash[-6:] == guess[:6]
+    # last 6 of last hash equal the first 6 of the guess
+    return last_hash[-6:] == guess_hash[:6]
 
 
 if __name__ == '__main__':

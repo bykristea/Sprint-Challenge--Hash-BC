@@ -1,0 +1,33 @@
+Explain in detail the workings of a dynamic array:
+        * A dynamic array expands as you add more elements. So you don't need to determine the size ahead of time. When you reach capacity, the array increases size, normally doubling.  The elements of the dynamic array are stored contiguously, 
+
+        * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back? runtime to access or look up will be O(1) as you know the index, inserting removing to the front will be O(n) inserting/removing from back will be O(1) unless at max then O(n) to perform increase. 
+
+        * O(n) to double or increase by n
+
+
+    
+
+    * What is the worse case scenario if you try to extend the storage size of a dynamic array?
+
+        *O(n) and is also the normal case. 
+
+Explain how a blockchain is structured. 
+    -- a blockchain is a growing list of records, called blocks, that are linked using cryptographic hashes. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data
+
+    --The Blocks hold transaction details that are hashed and encoded.  
+
+    --The Chain is what links blocks together which is hash of the previous block. 
+
+    How is the data organized?
+ 
+Explain how proof of work functions. 
+
+    How does it operate. 
+    -- Proof of Work is used to confirm transactions or mined blocks. The answer to the proof of work is the Hash
+    
+    How does this protect the chain from attack.
+    --  takes time to mine the hash of the current block. 
+    
+    What kind of attack is possible?
+    --51% attack, or a majority attack. Group of users ban together to control mining, they can monopolize the generation of new blocks.
